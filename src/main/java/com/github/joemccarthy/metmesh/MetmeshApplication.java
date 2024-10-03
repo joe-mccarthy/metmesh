@@ -1,4 +1,4 @@
-package com.github.joe_mccarthy.metmesh;
+package com.github.joemccarthy.metmesh;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
