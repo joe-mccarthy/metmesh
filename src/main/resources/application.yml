@@ -4,3 +4,11 @@ server:
 spring:
   application:
     name: metmesh
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /docs/api
+  swagger-ui:
+    path: /docs
+    tagsSorter: alpha
