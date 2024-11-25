@@ -26,8 +26,7 @@ public class ServerRestController {
     @Operation(summary = "Get Server Name", description = "Something about this endpoint.")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "OK", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ServerDTO.class))),
-            @ApiResponse(responseCode = "404", description = "Not found - The server was not found" , content = @Content())
-    })
+            @ApiResponse(responseCode = "404", description = "Not found - The server was not found", content = @Content()) })
     public ResponseEntity<ServerDTO> getMethodName() {
         return ResponseEntity.ok(ServerDTO.builder().name(serverDelegate.getMethodName()).build());
     }
