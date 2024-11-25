@@ -33,4 +33,4 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: |
         mvn -B install --file pom.xml
-        mvn sonar:sonar -Pcoverage --file pom.xml
+        mvn sonar:sonar --file pom.xml
